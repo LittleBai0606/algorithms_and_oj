@@ -1,5 +1,5 @@
 # Keep thinking, keep alive
-Until 2018-02-27 12:47:18, I have solved **4** / **706** problems while **132** are still locked.
+Until 2018-02-27 12:56:07, I have solved **4** / **706** problems while **132** are still locked.
 
 Completion statistic: 
 1. JavaScript: 0 
@@ -13,10 +13,10 @@ Note: :lock: means you need to buy a book from LeetCode
 ## LeetCode Solution Table
 | ID | Title | Difficulty | JavaScript | Python | C++ | Java |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|001|[Two Sum](https://leetcode.com/problems/two-sum/description/) |Easy|To Do|[Python](https://github.com/LittleBai0606/algorithms_and_oj/tree/master/leetcode-algorithms/001.%20Two%20Sum/1 Two Sum.py)|To Do|To Do|
-|002|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) |Medium|To Do|[Python](https://github.com/LittleBai0606/algorithms_and_oj/tree/master/leetcode-algorithms/002.%20Add%20Two%20Numbers/2 Add Two Numbers.py)|To Do|To Do|
-|003|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) |Medium|To Do|[Python](https://github.com/LittleBai0606/algorithms_and_oj/tree/master/leetcode-algorithms/003.%20Longest%20Substring%20Without%20Repeating%20Characters/3 Longest Substring Without Repeating Characters.py)|To Do|To Do|
-|004|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) |Hard|To Do|[Python](https://github.com/LittleBai0606/algorithms_and_oj/tree/master/leetcode-algorithms/004.%20Median%20of%20Two%20Sorted%20Arrays/4 Median of Two Sorted Arrays.py)|To Do|To Do|
+|001|[Two Sum](https://leetcode.com/problems/two-sum/description/) |Easy|To Do|[Python](https://github.com/LittleBai0606/algorithms_and_oj/blob/master/leetcode-algorithms/001.%20Two%20Sum/Q1.py)|To Do|To Do|
+|002|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) |Medium|To Do|[Python](https://github.com/LittleBai0606/algorithms_and_oj/blob/master/leetcode-algorithms/002.%20Add%20Two%20Numbers/Q2.py)|To Do|To Do|
+|003|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) |Medium|To Do|[Python](https://github.com/LittleBai0606/algorithms_and_oj/blob/master/leetcode-algorithms/003.%20Longest%20Substring%20Without%20Repeating%20Characters/Q3.py)|To Do|To Do|
+|004|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) |Hard|To Do|[Python](https://github.com/LittleBai0606/algorithms_and_oj/blob/master/leetcode-algorithms/004.%20Median%20of%20Two%20Sorted%20Arrays/Q4.py)|To Do|To Do|
 |005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) |Medium|To Do|To Do|To Do|To Do|
 |006|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) |Medium|To Do|To Do|To Do|To Do|
 |007|[Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) |Easy|To Do|To Do|To Do|To Do|
