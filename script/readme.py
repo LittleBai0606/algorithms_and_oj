@@ -26,7 +26,7 @@ class Config:
     """
     local_path = '/Users/baiyong/PycharmProjects/algorithms_and_oj'
     # solution of leetcode
-    github_leetcode_url = 'https://github.com/hey-bruce/algorithms_and_oj/blob/master/leetcode-algorithms/'
+    github_leetcode_url = 'https://github.com/LittleBai0606/algorithms_and_oj/tree/master/leetcode-algorithms/'
     # solution of pat,　暂时还没写
     github_pat_url = 'https://github.com/hey-bruce/algorithms_and_oj/blob/master/pat-algorithms/'
     leetcode_url = 'https://leetcode.com/problems/'
@@ -49,7 +49,6 @@ class Question:
         # the solution url
         self.python = ''
         self.java = ''
-        self.javascript = ''
         self.c_plus_plus = ''
 
     def __repr__(self):
@@ -179,7 +178,6 @@ class CompleteInform:
             'python': 0,
             'c++': 0,
             'java': 0,
-            'javascript': 0
         }
         self.complete_num = 0
         self.lock = 0
@@ -246,7 +244,6 @@ class Readme:
                     'id': item.id_,
                     'title': '[{}]({}) {}'.format(item.title, item.url, _lock),
                     'difficulty': item.difficulty,
-                    'js': item.javascript if item.javascript else 'To Do',
                     'python': item.python if item.python else 'To Do',
                     'c++': item.c_plus_plus if item.c_plus_plus else 'To Do',
                     'java': item.java if item.java else 'To Do'
