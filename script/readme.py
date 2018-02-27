@@ -31,7 +31,6 @@ class Config:
     github_pat_url = 'https://github.com/hey-bruce/algorithms_and_oj/blob/master/pat-algorithms/'
     leetcode_url = 'https://leetcode.com/problems/'
 
-
 class Question:
     """
     this class used to store the inform of every question
@@ -49,6 +48,7 @@ class Question:
         # the solution url
         self.python = ''
         self.java = ''
+        self.javascript = ''
         self.c_plus_plus = ''
 
     def __repr__(self):
@@ -157,6 +157,13 @@ class TableInform:
                             folder_url = os.path.join(Config.github_leetcode_url, folder_url)
                             # print(folder_url)
                             self.table_item[folder[:3]].c_plus_plus = '[C++]({})'.format(folder_url)
+                        elif item.endswith('.js'):
+                            complete_info.solved['javascript'] += 1
+                            folder_url = folder.replace(' ', "%20")
+                            folder_url = os.path.join(folder_url, item)
+                            folder_url = os.path.join(Config.github_leetcode_url, folder_url)
+                            # print(folder_url)
+                            self.table_item[folder[:3]].javascript = '[JavaScript]({})'.format(folder_url)
         readme = Readme(complete_info.total,
                         complete_info.complete_num,
                         complete_info.lock,
@@ -178,6 +185,7 @@ class CompleteInform:
             'python': 0,
             'c++': 0,
             'java': 0,
+            'javascript': 0
         }
         self.complete_num = 0
         self.lock = 0
@@ -208,9 +216,10 @@ class Readme:
                    'Until {}, I have solved **{}** / **{}** problems ' \
                    'while **{}** are still locked.' \
                    '\n\nCompletion statistic: ' \
-                   '\n1. Python: {python}' \
-                   '\n2. C++: {c++}' \
-                   '\n3. Java: {java}' \
+                   '\n1. JavaScript: {javascript} ' \
+                   '\n2. Python: {python}' \
+                   '\n3. C++: {c++}' \
+                   '\n4. Java: {java}' \
                    '\n\nNote: :lock: means you need to buy a book from LeetCode\n'.format(
                     self.time, self.solved, self.total, self.locked, **self.others)
 
@@ -227,7 +236,7 @@ class Readme:
 
         with open(file_path, 'a') as f:
             f.write('## LeetCode Solution Table\n')
-            f.write('| ID | Title | Difficulty | Python | C++ | Java |\n')
+            f.write('| ID | Title | Difficulty | JavaScript | Python | C++ | Java |\n')
             f.write('|:---:' * 7 + '|\n')
             table, table_item = table_instance
             # print(table)
@@ -244,11 +253,12 @@ class Readme:
                     'id': item.id_,
                     'title': '[{}]({}) {}'.format(item.title, item.url, _lock),
                     'difficulty': item.difficulty,
+                    'js': item.javascript if item.javascript else 'To Do',
                     'python': item.python if item.python else 'To Do',
                     'c++': item.c_plus_plus if item.c_plus_plus else 'To Do',
                     'java': item.java if item.java else 'To Do'
                 }
-                line = '|{id}|{title}|{difficulty}|{python}|{c++}|{java}|\n'.format(**data)
+                line = '|{id}|{title}|{difficulty}|{js}|{python}|{c++}|{java}|\n'.format(**data)
                 f.write(line)
             print('README.md was created.....')
 
